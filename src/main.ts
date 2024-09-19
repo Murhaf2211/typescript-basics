@@ -40,7 +40,7 @@ if (!isAdmin) {
 
 let n:number = 5;
 for (let i=1; i <= n; i++){
-    let spaces = ' '.repeat(5 - i);
+    let spaces = ' '.repeat(n - i);
     let stars = '*'.repeat(2 * i - 1);
     console.log(spaces + stars);
 }
@@ -49,3 +49,18 @@ for (let i=1; i <= n; i++){
     let stars = '*';
     console.log(spaces + stars);
 }
+const num=[ 3, 8, 9, 10, 15 ];
+const newNum =num.map(num => num * 2 );
+console.log(num);
+console.log(newNum);
+
+const words =["hello", "hi", "Hallochen", "Hey"];
+console.log(words);
+const newWords = words.filter(word => word.length > 5 );
+console.log(newWords);
+
+const reduce = num.reduce((accumulator, currentValue) => accumulator + currentValue, 0);
+console.log(reduce);
+
+const some= num.some(num => num > 10);
+console.log(some);
